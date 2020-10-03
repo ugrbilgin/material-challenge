@@ -1,0 +1,145 @@
+body {
+    background-color: #e5e5e5;
+  }
+
+.d3-app-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.card-container{
+    position: absolute;
+    background-color: #ffff;
+    width: 500px;
+    height: 80px;
+    border-radius: 10px;
+    flex-direction: row;
+    top: 100px;
+    
+    
+}
+
+.btn-cmp{
+    position: absolute;
+    color: black;
+    width: 120px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: 1000;
+    text-align: center;
+    background-color: #C9D5F0;
+    border:none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#label{
+    position: absolute;
+    left: 160px;
+    top: 30px;
+    font-size: 16px;
+    align-self: center;
+    margin: auto;
+    color: #00000050;
+    font-weight: 100%;
+}
+
+.card-locaiton{
+    position: absolute;
+    width: 375px;
+    height: 320px;
+    background-color: #ffff;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-icon{
+    width: 60px;
+    height: 60px;
+    left: 170px;
+    top: 45px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 50px;
+    background-color: #FFE7EF;
+    flex-direction: column;
+    align-items: center;
+  
+    
+}
+
+#icon-nav {
+color: #E65B8D;
+position: relative;
+font-size: 50px;
+    &:hover {
+      cursor: pointer;
+      color: darken($color: #E65B8D, $amount: 5%);
+    }
+}
+
+#d3-title{
+    margin-bottom: 0;
+}
+
+#d3-text{
+    margin: 10px 0;
+}
+
+.btn-locations {
+    background-color: #E75B8D;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 180px;
+    height: 60px;
+    position: absolute;
+    margin-top: 220px;
+}
+
+
+
+.avaible-container{
+    flex-direction:column;
+    width: 260px;
+    height: 335px;
+    border-radius: 10px;
+    background-color: #ffff;
+    padding: 50px 40px;
+    font-size: 25px;
+}
+
+.btn-avaible{
+    position: relative;
+    width: 180px;
+    height: 60px;
+    left: 40px;
+    border-color: #E75B8D;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ffff;
+    border-width: 3px;
+    cursor: pointer;
+    color: #E75B8D;
+    font-size: 16px;
+    
+    
+}
