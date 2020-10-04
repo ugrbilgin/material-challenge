@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap");
+
+body {
+  background-color: #202020;
+}
+
+.components-container-d4 {
+  display: inline-flex;
+}
+
+.bar-container-d4 {
+  left: 100px;
+  background-color: #3886b4;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  display: inline-flex;
+  padding: 35px 35px 35px 45px;
+  color: #ffff;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  .content {
+    margin-right: 60px;
+    font-display: column;
+    span {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .arrow-container {
+    background-color: #247caf;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    align-content: center;
+		color: #7ed6ff;
+		cursor: pointer;
+  }
+}
+
+.btn-container-d4 {
+  display: inline-flex;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  min-width: 180px;
+  justify-content: space-between;
+
+  button {
+    padding: 15px;
+    display: inline-flex;
+    background-color: #ffff;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    &:hover {
+      background-color: #3886b4;
+      color: #ffff;
+    }
+  }
+}
+
+.category-content {
+  display: inline-flex;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 15px;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($color: #ffff, $amount: 10%);
+  }
+  .contents {
+    :nth-child(2) {
+      color: #27264370;
+    }
+    margin-left: 15px;
+  }
+  .icon-container {
+    position: relative;
+    left: 200px;
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #d0f0ee;
+    color: #272643;
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    &:hover {
+      background-color: darken($color: #d0f0ee, $amount: 10%);
+    }
+  }
+}
+
+.category-container {
+  flex-direction: column;
+  width: 400px;
+  background-color: #ffff;
+  border-radius: 15px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+}
+
+.product-container {
+  width: 426px;
+  height: 409px;
+  background-image: url("./shoes.jpg");
+  background-size: cover;
+  .like-btn {
+    display: inline-flex;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    left: 370px;
+    border-radius: 20px;
+    background-color: #93959b;
+    cursor: pointer;
+    i {
+      color: rgb(69, 69, 69);
+      transition: ease-in-out 0.3s;
+      &:hover {
+        color: rgb(255, 0, 0);
+      }
+    }
+  }
+  .selected {
+    height: 5px;
+    display: inline-flex;
+    position: relative;
+    top: 350px;
+		left: 120px;
+		cursor: pointer;
+
+    div {
+      &:nth-child(1) {
+        background-color: #3886b4;
+        height: 3px;
+				width: 30px;
+				&:hover{
+				background-color: darken($color: #3886b4, $amount: 10%);
+			}
+      }
+      background-color: #93959b;
+      height: 3px;
+      width: 20px;
+      margin-right: 2px;
+			border-radius: 3px;
+			&:hover{
+				background-color: darken($color: #93959b, $amount: 10%);
+			}
+    }
+  }
+}
