@@ -6,6 +6,7 @@ body {
 
 .components-container-d4 {
   display: inline-flex;
+	flex-flow: wrap; // wrap diyerek taşan elemanları alt satıra taşı
 }
 
 .bar-container-d4 {
@@ -61,7 +62,8 @@ body {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    &:hover {
+    color:black;//default renk tanımla
+    &:first-of-type, &:hover { // ilk elemanın background'ını ayarla
       background-color: #3886b4;
       color: #ffff;
     }
@@ -118,7 +120,7 @@ body {
 .product-container {
   width: 426px;
   height: 409px;
-  background-image: url("./shoes.jpg");
+	//  background-image: url("./shoes.jpg"); ! buradaki url'i react içinde inline css ile {backgroundImage:require("./shoes.jpg")} ile ver
   background-size: cover;
   .like-btn {
     display: inline-flex;
